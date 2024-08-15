@@ -1,0 +1,101 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    padding-top:20rem;
+    position: relative;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    position: relative;
+    background-color: #f4f4f4;
+    cursor: col-resize;
+}
+
+th::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    cursor: col-resize;
+    background-color: transparent;
+}
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+h1{
+    text-align:center;
+    background-color: rgb(255, 252, 248);
+    
+    
+    color: blue;
+    
+}
+
+#dataForm{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   padding-left: 3rem;
+   
+   
+  
+   
+   
+    
+   
+
+}
+input{
+    padding: 2px;
+    border: 2px solid rgb(4, 255, 4);
+    border-radius: 6px;
+   font-size: 1rem;
+   display:flex;
+   
+}
+input:focus{
+color: rgb(3, 3, 3);
+}
+
+span{
+    color: rgb(255, 175, 47);
+    font-family:cursive;
+}
+button{
+    border: 2px solid transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    background-color: bisque;
+    box-shadow: 0 0 25px ;
+}
+button:hover{
+    
+    border:2px solid rgb(28, 240, 0);
+    box-shadow: 0 0 25px rgba(226, 88, 88, 0)
+                0 0 50px rgba(226, 88, 88, 0);
+}
+#studentTable{
+    display: ;
+    vertical-align: top;
+    width:80vw;
+    margin-left: 3rem;
+    position:sticky;
+    flex: left;
+}

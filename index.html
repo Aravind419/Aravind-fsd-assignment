@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav">
+    <h1>Student Data <br><span> It stores the data</span></h1>
+</header>
+    
+    <section class="home">
+    <form id="dataForm">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id"placeholder="Enter ID" required>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Name" required>
+        <label for="Dept">Dept:</label>
+        <input type="text" id="Dept" name="age" placeholder="Enter Dept" required>
+        <button id="btn" type="button" onclick="addRowFromForm()">Add This</button>
+    </form>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Dept</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Existing rows or rows will be added here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</section>
+</body>
+</html>
