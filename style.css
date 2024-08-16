@@ -40,26 +40,19 @@ button {
 h1{
     text-align:center;
     background-color: rgb(255, 252, 248);
-    
+    text-shadow: 0 0 100px rgb(255, 38, 0);
     
     color: blue;
     
 }
 
 #dataForm{
-   display: flex;
+   display: shrink;
    justify-content: center;
    align-items: center;
-   
+   text-shadow: 0 0 25px green;
    padding-left: 3rem;
    
-   
-  
-   
-   
-    
-   
-
 }
 input{
     padding: 2px;
@@ -84,6 +77,7 @@ button{
     border-radius: 1rem;
     background-color: bisque;
     box-shadow: 0 0 25px ;
+    align-items: center;
 }
 button:hover{
     
@@ -92,10 +86,14 @@ button:hover{
                 0 0 50px rgba(226, 88, 88, 0);
 }
 #studentTable{
-    display: ;
+    
     vertical-align: top;
     width:80vw;
     margin-left: 3rem;
-    position:sticky;
+    
     flex: left;
+.header{
+    background-color: rgb(72, 240, 0);
+    position:fixed;
+    width: 100%;
 }

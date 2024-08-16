@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 function addRowFromForm() {
     const id = document.getElementById('id').value;
     const name = document.getElementById('name').value;
-    const Dept = document.getElementById('Dept').value;
+    const age = document.getElementById('age').value;
 
-    if (id && name && Dept) {
+    if (id && name && age) {
         const table = document.querySelector('#studentTable tbody');
         const newRow = table.insertRow();
         
@@ -18,7 +18,7 @@ function addRowFromForm() {
         
         cell1.textContent = id; // ID
         cell2.textContent = name; // Name
-        cell3.textContent = Dept; // Age
+        cell3.textContent = age; // Age
         cell4.innerHTML = '<button onclick="deleteRow(this)">Delete</button>'; // Action
 
         // Store the new row data
@@ -70,11 +70,12 @@ function loadTableData() {
             
             cell1.textContent = rowData.id; // ID
             cell2.textContent = rowData.name; // Name
-            cell3.textContent = rowData.Dept; // Age
+            cell3.textContent = rowData.age; // Age
             cell4.innerHTML = '<button onclick="deleteRow(this)">Delete</button>'; // Action
         });
     }
 }
+
 document.addEventListener('DOMContentLoaded', function() {
     const table = document.getElementById('studentTable');
     const cols = table.querySelectorAll('th');
