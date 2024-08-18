@@ -97,3 +97,16 @@ button:hover{
     position:fixed;
     width: 100%;
 }
+/* Example: Make the text larger on screens wider than 600px */
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Example: Adjust layout for smaller screens */
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}

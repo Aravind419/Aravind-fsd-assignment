@@ -100,3 +100,25 @@ document.addEventListener('DOMContentLoaded', function() {
         document.removeEventListener('mouseup', stopResize);
     }
 });
+window.onload = function() {
+    resizeFunction(); // Call on page load
+};
+
+window.onresize = function() {
+    resizeFunction(); // Call on window resize
+};
+
+function resizeFunction() {
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+
+    if (width < 600) {
+        document.body.style.backgroundColor = "lightblue";
+    } else {
+        document.body.style.backgroundColor = "white";
+    }
+}
+if (window.innerWidth < 600) {
+    // Code to adjust layout for small screens
+    document.querySelector('.sidebar').style.display = 'none';
+}
